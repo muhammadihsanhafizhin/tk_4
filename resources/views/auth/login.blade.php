@@ -33,6 +33,7 @@
                     <a href="/register">Belum punya akun? Daftar di sini.</a>
                 </div>
             </div>
+            <p style='color:red'>*Jika memilih untuk meng-import Database. maka username dan password untuk admin adalah `admin123` dan untuk user adalah `admin1234`</p>
         </div>
     </div>
 </div>
