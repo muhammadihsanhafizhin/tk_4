@@ -16,7 +16,6 @@ class Pelanggan extends Model
         'NamaPelanggan',
         'NoHP',
         'TanggalDaftar',
-        // tambahkan kolom-kolom lain yang ingin Anda isi
     ];
 
     // Relasi dengan tabel penjualan (jika diperlukan)

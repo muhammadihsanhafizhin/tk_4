@@ -25,12 +25,12 @@ class PenggunaController extends Controller
         // Validasi data yang diterima dari request
         $request->validate([
             'NamaPengguna' => 'required|unique:pengguna',
-            'Password' => 'required|min:6',
+            'Password' => 'required',
             'NamaDepan' => 'required',
             'NamaBelakang' => 'required',
             'noHP' => 'required',
             'Alamat' => 'required',
-            'idAkses' => 'required|exists:hak_akses,idAkses',
+            'IdAkses' => 'required|exists:hak_akses,IdAkses',
         ]);
 
         // Buat pengguna baru
@@ -41,7 +41,7 @@ class PenggunaController extends Controller
             'NamaBelakang' => $request->NamaBelakang,
             'noHP' => $request->noHP,
             'Alamat' => $request->Alamat,
-            'idAkses' => $request->idAkses,
+            'IdAkses' => $request->IdAkses,
         ]);
 
         // return response()->json(['message' => 'Pengguna berhasil terdaftar'], 201);

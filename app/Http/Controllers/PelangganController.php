@@ -34,7 +34,6 @@ class PelangganController extends Controller
             'NamaPelanggan' => 'required',
             'Alamat' => 'required',
             'NoHP' => 'required',
-            // tambahkan validasi untuk kolom-kolom lainnya
         ]);
     
         Pelanggan::create($request->all());
@@ -68,7 +67,6 @@ class PelangganController extends Controller
         $request->validate([
             'NamaPelanggan' => 'required',
             'NoHP' => 'required',
-            // tambahkan validasi untuk kolom-kolom lainnya
         ]);
     
         $pelanggan->update($request->all());
@@ -84,7 +82,6 @@ class PelangganController extends Controller
     {
         $pelanggan->delete();
     
-        return redirect()->route('pelanggan.index')
-                        ->with('success','Pelanggan deleted successfully');
+        return redirect()->route('pelanggan.index')->with('success','Pelanggan deleted successfully');
     }
 }
