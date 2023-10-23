@@ -15,7 +15,6 @@ class Pelanggan extends Model
     protected $fillable = [
         'NamaPelanggan',
         'NoHP',
-        'TanggalDaftar',
     ];
 
     // Relasi dengan tabel penjualan (jika diperlukan)

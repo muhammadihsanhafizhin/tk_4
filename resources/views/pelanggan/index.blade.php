@@ -3,7 +3,7 @@
 @section('content')
     <div class="container">
         <h2>Daftar Pelanggan</h2>
-        <a class="btn btn-success" href="{{ route('supplier.create') }}">Tambah Pelanggan</a>
+        <a class="btn btn-success" href="{{ route('pelanggan.create') }}">Tambah Pelanggan</a>
         <br><br>
         <table class="table table-bordered">
             <tr>

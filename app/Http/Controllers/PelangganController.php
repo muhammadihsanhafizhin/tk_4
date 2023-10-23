@@ -32,7 +32,6 @@ class PelangganController extends Controller
     {
         $request->validate([
             'NamaPelanggan' => 'required',
-            'Alamat' => 'required',
             'NoHP' => 'required',
         ]);
     
